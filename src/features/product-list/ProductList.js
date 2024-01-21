@@ -26,11 +26,12 @@ const sortOptions = [
   { name: "Price: High to Low", href: "#", current: false },
 ];
 const subCategories = [
-  { name: "Totes", href: "#" },
-  { name: "Backpacks", href: "#" },
-  { name: "Travel Bags", href: "#" },
-  { name: "Hip Bags", href: "#" },
-  { name: "Laptop Sleeves", href: "#" },
+  { name: "Wooden Items", href: "#" },
+  { name: "Marble Items", href: "#" },
+  { name: "Dresses", href: "#" },
+  { name: "Kits(Combos)", href: "#" },
+  { name: "Fragrances", href: "#" },
+  { name: "Murti(Metal)", href: "#" },
 ];
 const filters = [
   {
