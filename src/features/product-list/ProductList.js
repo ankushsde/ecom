@@ -49,11 +49,11 @@ const filters = [
     id: "category",
     name: "Category",
     options: [
-      { value: "wooden-items", label: "Wooden Items", checked: false },
-      { value: "marbel-items", label: "Marble Items", checked: false },
-      { value: "kits-combos", label: "Kits", checked: true },
-      { value: "fragrances", label: "Fragrances", checked: false },
-      { value: "murti-metal", label: "Murti", checked: false },
+      { value: "new-arrivals", label: "New Arrivals", checked: false },
+      { value: "sale", label: "Sale", checked: false },
+      { value: "travel", label: "Travel", checked: true },
+      { value: "organization", label: "Organization", checked: false },
+      { value: "accessories", label: "Accessories", checked: false },
     ],
   },
   {
@@ -261,7 +261,7 @@ export default function ProductList() {
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-                Products
+                  All Products
                 </h1>
 
                 <div className="flex items-center">
