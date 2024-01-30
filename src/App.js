@@ -5,12 +5,36 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import Signup from './features/auth/components/Signup';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>,
+  },
+  {
+    path: "/login",
+    element: <LoginPage></LoginPage>,
+  },
+  {
+    path: "/signup",
+    element:  <Signup></Signup>,
+  },
+  
+]);
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-   <Home></Home>      
-    </header>
+     
+      <RouterProvider router={router} />
+
     </div>
   );
 }
