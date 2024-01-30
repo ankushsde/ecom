@@ -6,6 +6,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
+import { Link } from "react-router-dom";
+
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
@@ -73,11 +75,12 @@ function NavBar({ children }) {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
+                      <Link to="/cart">
                       <button
                         type="button"
-                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                        className=" rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
-                        <span className="absolute -inset-1.5" />
+                        {/* <span className="absolute -inset-1.5" /> */}
                         <span className="sr-only">View notifications</span>
                         <ShoppingCartIcon
                           className="h-6 w-6"
@@ -85,6 +88,7 @@ function NavBar({ children }) {
                         />
                         
                       </button>
+                      </Link>
                       <span className="inline-flex items-center rounded-md mb-7 -ml-3 bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
                           2
                         </span>
@@ -189,18 +193,20 @@ function NavBar({ children }) {
                         {user.email}
                       </div>
                     </div>
+                    <Link to="/cart">
+
                     <button
                       type="button"
-                      className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className=" ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">View notifications</span>
+                       <span className="sr-only">View notifications</span>
                       <ShoppingCartIcon
                         className="h-6 w-6"
                         aria-hidden="true"
                       />
                      
                     </button>
+                    </Link>
                     <span className="inline-flex items-center rounded-md mb-7 -ml-3 bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
                         4
                       </span>
